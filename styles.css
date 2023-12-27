@@ -18,7 +18,7 @@ body{
 
 #odin{
 	align-items: center;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
 	right: 25%;
 	width: 10%;
@@ -170,15 +170,12 @@ fieldset{
 }
 
 #odin:hover{
-	display: flex;
 	transform: translate(-900px, 400px);
 	transform-origin: 0%;
 	transform: rotate(360deg);
 	transition-duration: 2s;	
 	z-index: 1;
 	position: fixed;
-	color: red;
-
 
 }
 
