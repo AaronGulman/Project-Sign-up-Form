@@ -1,0 +1,54 @@
+@media screen and (max-width: 600px) {
+	body {
+	    display: flex;
+	    overflow: hidden;
+	    margin: 0;
+	    padding: 0;
+	}
+    
+	#odin {
+	    position: absolute;
+	    width: 200px;
+	    height: 200px;
+	    right: 30px;
+
+
+	}
+    
+	main {
+	    width: 100%;
+	    border-radius: 0;
+	    box-shadow: none;
+
+	}
+    
+	form {
+	    width: 100%;
+	    font-size: 20px;
+
+	    
+	}
+    
+	input {
+	    width: 100%;
+	    font-size: 15px;
+	    
+
+	}
+
+	button{
+		font-size: 20px;
+		width: 70%;
+	}
+    
+	#odin:active {
+		display: flex;
+		transform: translate(-900px, 400px);
+		transform-origin: 0%;
+		transform: rotate(360deg);
+		transition-duration: 2s;	
+		z-index: 1;
+		position: absolute;
+		color: red;
+	}
+    }
