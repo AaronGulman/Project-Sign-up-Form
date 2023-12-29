@@ -1,5 +1,5 @@
 if (window.innerWidth <= 600) {
-let gameP = document.querySelector("#layer_1");
+let gameP = document.querySelector("#realPad");
 let userInp = document.querySelectorAll("input");
 
 let totalRot = 0;

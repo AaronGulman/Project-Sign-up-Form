@@ -1,16 +1,38 @@
-let gamepad = document.querySelector("#layer_1");
+let gamepad = document.querySelector("#realPad");
 let userInput = document.querySelectorAll('input');
+let gameDiv = document.getElementById('gamepad')
+let odin = document.getElementById('odin')
 
 let totalRotation = 0;
 
+let xPosition = 5;
+let yPosition = 5;
+let xSpeed = 10;
+let ySpeed = 10;
+
+function update(){
+    odin.style.left = xPosition + 'px'
+    odin.style.top = yPosition + 'px'
+    console.log('update is working')
+}
+
+
+setInterval(()=>{
+    xPosition += xSpeed;
+    yPosition += ySpeed;
+    // update()
+},1000)
+
+
+
 function inputTrigger() {
     totalRotation += 5;
-    gamepad.style.transform = `translateX(350px) translateY(400px) scale(5) rotate(${totalRotation}deg)`;
-    gamepad.style.transition = 'transform 2s';
+    realPad.style.transform = `rotate(${totalRotation}deg)`;
+    realPad.style.transition = 'transform 2s';
     userInput.forEach(input =>{
     if(userInput.value == ''){
 	totalRotation = 0;
-	gamepad.style.transform = `rotate(${totalRotation}deg)`;
+	realPad.style.transform = `rotate(${totalRotation}deg)`;
     }
 })
 }
